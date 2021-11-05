@@ -1,0 +1,388 @@
+
+    
+    <html>  
+    <style>
+<style>
+    .container{
+    width:100%;
+    margin:3.5rem auto 0 auto;
+    }
+    @media(min-width:576px) {
+    .container{
+    max-width:540px;
+    }
+    }
+    @media(min-width:768px){
+    .container{
+    max-width: 720px;
+    }
+    }
+    .header{
+    padding:5px;
+    margin-bottom: 20px;
+    }
+    .description{
+    font-style:bold-italic;
+    font-weight:250;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    }
+    .clue{
+    margin-left:0.24rem;
+    font-size: 0.9rem; 
+    color:#e4e4e4;
+    }
+    .text-center{
+    text-align: center;
+    }
+    /* form*/
+    
+    form{
+    background: var(--cyan-);
+    padding:2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    }
+    @media(min width:480px){
+    form{
+    padding:2.5rem;
+    }
+    }
+    .form-group{
+    margin: 0 auto 1,25rem auto;
+    padding: 0.25rem;
+    }
+    .form-control{
+    display: block;
+    width:100%;
+    height:2.35rem;
+    padding:0.375rem, 0.75rem;
+    color:black;
+    background-color:#fff
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transiton: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    }
+    
+    .form-control:focus{
+    border-color:#80bdff;
+    outline:0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123,255,0.25);
+    }
+    
+    .input-radio,
+    .input-checkbox{
+    display:inline-block;
+    margin-right: 0.625rem;
+    min-height 1.25rem;
+    }
+    
+    .input-textarea{
+    min-height:200px;
+    width:100%;
+    padding: 1rem;
+    resize: vertical;
+    }
+    .submit-button{
+    display:block;
+    width:100%;
+    padding:0.75rem;
+    background: var(--color-black);
+    color:black;
+    border-radius:2px;
+    cursor:pointer;
+    }
+    
+</style>
+
+
+    <Div class="container">
+    <Header class= Header>
+    <h1 id="title" class="text-center">Help Code The World</h1>
+    <p id="description-text" class="description-Center"> Thank you for looking us up.
+    lets code the World together</p>
+    </header>
+    
+    <form id="survey-form">
+    <div id="form-group">
+    <label id="First name-label" For="First name"</label>
+    <input
+    type="text"
+    name="First name"
+    id="Name"
+    class="Form-control"
+    placeholder="Enter your First name"
+    required
+    />
+    
+    <div id="form-group">
+    <label id="Middle name-label" For="middle name"</label>
+    <input
+    type="text"
+    name="Middle name"
+    id="name"
+    class="Form-control"
+    placeholder="Enter your middle name"
+    required
+    />
+    </div>
+    
+    <div id="form-group">
+    <label id="Last name-label" For="last name"</label>
+    <input
+    type="text"
+    name="last name"
+    id="name"
+    class="form-control"
+    placeholder="Enter your Last name"
+    required
+    />
+    </div>
+    
+    <div id="form-group">
+    <label id="email-label" For="email"</label>
+    <input
+    type="email"
+    name="email"
+    id="email"
+    class="form-control"
+    placeholder="Enter your email"
+    required
+    />
+    </div>
+    
+    <div id="form-group"
+    <label id="Age-label" for="age"
+    <input
+    type="number"
+    name="age"
+    id="number"
+    min="10"
+    max="100"
+    id="number"
+    class="form-control"
+    placeholder="Enter your Age"
+    />
+    </div>
+    
+    <div class="form-group">
+    <p> In which role are you?</p>
+    <select id="dropdown" name="role"
+    class="Form-control"required>
+    <option disabled selected value>select current role</option>
+    <option value="student"<student</option>
+    <option value="lecturer"<lecturer</option>
+    <option value="Donor"<Donor</option>
+    <option value="Job"<Job</option>
+    </div>
+    
+    <div class="form-group">
+    <p>Which experience level are you</p>
+    <select id="dropdown" name="experience"
+    class="Form-control"required>
+    <option disabled selected value>select current experince level</option>
+    <option value="entry"<entry</option>
+    <option value="intermediate"<intermediate</option>
+    <option value="expert"<expert</option>
+    </div>
+    
+    <div class="form-group">
+    <p> How many programming languages do you  know?
+    <span class="clue">(check all the boxes that apply) </span>
+    </p>
+     <label>
+    <input
+    name="prefer"
+    value="HTML"
+    type="checkbox"
+    class="input-chcekbox"
+    />HTML</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="Java"
+    type="checkbox"
+    class="input-checkbox"
+    />Java</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="Javascript"
+    type="checkbox"
+    class="input-checkbox"
+    />Javascript</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="Python"
+    type="checkbox"
+    class="input-checkbox"
+    />Python</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="C"
+    type="checkbox"
+    class="input-checkbox"
+    />C</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="C++"
+    type="checkbox"
+    class="input-checkbox"
+    />C++</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="PHP"
+    type="checkbox"
+    class="input-chcekbox"
+    />PHP</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="All the Above"
+    type="checkbox"
+    class="input-checkbox"
+    />All the Above</label>
+    
+    <label id="If any other please indicate" For="if any other please indicate"</label>
+    <input
+    type="text"
+    name="If any other please indicate"
+    id="name"
+    class="Form-control"
+    placeholder="Enter any other programming that you might know"
+    optional
+    />
+     </div>
+    
+    <div class="form-group">
+    <p> What Gadget do you use?
+    <span class="clue">(check all the boxes that apply)</span>
+    <p>
+    <label>
+    <input
+    name="prefer"
+    value="Smartphone"
+    type="checkbox"
+    class="input-checkbox"
+    />Smartphone</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="laptop"
+    type="checkbox"
+    class="input-checkbox"
+    />laptop</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="Tablet"
+    type="checkbox"
+    class="input-checkbox"
+    />Tablet</label>
+    
+    <label>
+    <input
+    name="prefer"
+    value="All of the Above"
+    type="checkbox"
+    class="input-checkbox"
+    />All of the Above</label>
+    </div>
+    
+    <div class="form-group">
+    <p>What made you take up coding</p>
+    <textarea
+    id="answers"
+    type="text"
+    class="input-textarea"
+    name="answers"
+    placeholder="Answer Here..."
+    required
+    ></textarea>
+    </div>
+    
+    <div class="form-group">
+    <p>Any comments or suggestions?</p>
+    <textarea
+    id="commments"
+    type="text"
+    class="input-textarea"
+    name="comments"
+    placeholder="Please leave a comment..."
+    ></textarea>
+    </div>
+    
+    <div class="form-group">
+    <p>Was this survey helpful?</p>
+    <label>
+    <input
+    name="helpful"
+    value="Yes"
+    type="radio"
+    class="input-radio"
+    />Yes</label>
+    
+    <label>
+    <input
+    name="helpful"
+    value="No"
+    type="radio"
+    class="input-radio"
+    />No</label>
+    </div>
+    
+    <div class="form-group">
+    <button type="submit" id="submit"
+    class="submit-button">
+    Submit</button>
+    </div>
+    
+    </form>
+    </div>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
